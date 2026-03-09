@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { User } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,9 +45,13 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="about-item flex justify-center">
             <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
-              <div className="relative w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-cyan-500/20 to-blue-600/20 backdrop-blur-sm rounded-full border border-cyan-500/30 flex items-center justify-center">
-                <User size={120} className="text-cyan-400" />
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-blue-500 to-cyan-400 rounded-full blur-2xl opacity-60 group-hover:opacity-80 transition-opacity duration-300 animate-pulse"></div>
+              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-cyan-400/50 ring-2 ring-blue-500/30 shadow-2xl shadow-cyan-500/50">
+                <img
+                  src="/Developer_Image.png"
+                  alt="ABUBUCKER"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
